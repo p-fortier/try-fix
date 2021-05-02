@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: gateway.127.0.0.1.nip.io
+functions:
+  tryout:
+    lang: java11-vert-x
+    handler: ./tryout
+    image: pfortier/tryout:1.0
+
